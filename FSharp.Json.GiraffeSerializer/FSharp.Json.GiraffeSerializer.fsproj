@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp5</TargetFramework>
+    <Description>IJsonSerializer implementation for FSharp.Json</Description>
+    <Authors>Weslen Guerreiro</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/nglabo/FSharp.Json.GiraffeSerializer</PackageProjectUrl>
+    <Copyright>Copyright 2021</Copyright>
+    <RepositoryUrl>https://github.com/nglabo/FSharp.Json.GiraffeSerializer</RepositoryUrl>
+    <PackageTags>FSharp.Json IJsonSerializer Json Serializer F# FSharp</PackageTags>
+    <Version>0.1.0</Version>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Json" Version="0.4.0" />
+    <PackageReference Include="Giraffe" Version="4.1.0" />
+  </ItemGroup>
+
+</Project>
