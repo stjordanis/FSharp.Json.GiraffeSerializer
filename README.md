@@ -6,9 +6,9 @@
 
 ## Usage
 ```fsharp
-open FSharp.Json.GiraffeSerializer
+open FSharp.Json.GiraffeSerializer (* Open the module *)
 open Giraffe
-open Giraffe.Serialization.Json
+open Giraffe.Serialization.Json (* Open the module *)
 open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Hosting
 open Microsoft.Extensions.DependencyInjection
@@ -25,7 +25,7 @@ let router =
 type Startup() =
     member __.ConfigureServices(services: IServiceCollection) =
         services.AddSingleton<IJsonSerializer>(FSharpJsonSerializer())
-        |> ignore
+        |> ignore (* Register the IJsonSerializer class and all done! *)
 
         services.AddGiraffe() |> ignore
 
